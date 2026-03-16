@@ -1,24 +1,16 @@
-// @ts-check
-import { themes as prismThemes } from 'prism-react-renderer';
-
-/** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'DriveSafe',
   tagline: 'Drive smarter. Drive safer.',
   favicon: 'img/favicon.ico',
 
-  url: 'https://example.com', // placeholder valid
+  url: 'https://example.com',
   baseUrl: '/',
 
   organizationName: 'drivesafe',
-  projectName: 'drivesafe-docs',
+  projectName: 'drivesafe',
 
   onBrokenLinks: 'warn',
-markdown: {
-  hooks: {
-    onBrokenLinks: 'warn',
-  },
-},
+  onBrokenMarkdownLinks: 'warn', // ✅ valid pentru v3
 
   i18n: {
     defaultLocale: 'en',
@@ -28,17 +20,17 @@ markdown: {
   presets: [
     [
       'classic',
-      ({
+      {
         docs: {
           sidebarPath: './sidebars.js',
-          routeBasePath: '/', // docs la root
+          routeBasePath: '/docs',
         },
         blog: false,
         pages: true,
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-      }),
+      },
     ],
   ],
 
@@ -54,10 +46,10 @@ markdown: {
           type: 'doc',
           docId: 'penalties',
           position: 'left',
-          label: 'Documentation',
+          label: 'Docs',
         },
         {
-          href: 'https://github.com/scemercat/drivesafe',
+          href: 'https://github.com/scemercat1/drivesafe',
           label: 'GitHub',
           position: 'right',
         },
@@ -70,22 +62,10 @@ markdown: {
         {
           title: 'Docs',
           items: [
-            {
-              label: 'Penalties',
-              to: '/penalties',
-            },
-            {
-              label: 'Traffic Laws',
-              to: '/traffic-laws',
-            },
-            {
-              label: 'Safe Driving',
-              to: '/safe-driving',
-            },
-            {
-              label: 'FAQ',
-              to: '/faq',
-            },
+            { label: 'Penalties', to: '/docs/penalties' },
+            { label: 'Traffic Laws', to: '/docs/traffic-laws' },
+            { label: 'Safe Driving', to: '/docs/safe-driving' },
+            { label: 'FAQ', to: '/docs/faq' },
           ],
         },
       ],
@@ -93,8 +73,8 @@ markdown: {
     },
 
     prism: {
-      theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
+      theme: require('prism-react-renderer/themes/github'),
+      darkTheme: require('prism-react-renderer/themes/dracula'),
     },
   },
 };
