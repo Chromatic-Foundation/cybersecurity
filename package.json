@@ -1,5 +1,5 @@
 {
-  "name": "drivesafe-docs",
+  "name": "CyberSecurity",
   "private": true,
   "scripts": {
     "build": "docusaurus build",
