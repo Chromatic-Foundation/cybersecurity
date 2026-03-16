@@ -7,7 +7,7 @@ const config = {
   tagline: 'Drive smarter. Drive safer.',
   favicon: 'img/favicon.ico',
 
-  url: 'https://example.com', // Placeholder valid pentru build
+  url: 'https://example.com', // placeholder valid, e necesar
   baseUrl: '/',
 
   organizationName: 'drivesafe',
@@ -27,10 +27,11 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          routeBasePath: '/', // `/` pentru docs
+          routeBasePath: '/', // face ca /docs să fie root
         },
         blog: false,
-        pages: false
+        pages: false,
+        theme: {}, // folosește tema default
       }),
     ],
   ],
@@ -40,8 +41,8 @@ const config = {
       title: 'DriveSafe',
       items: [
         {
-          type: 'doc',
-          docId: 'penalties',
+          type: 'docSidebar',
+          sidebarId: 'docs',
           position: 'left',
           label: 'Docs',
         },
