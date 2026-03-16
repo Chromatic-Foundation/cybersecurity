@@ -49,8 +49,8 @@ const config = {
           label: 'Documentation',
         },
         {
-          href: 'https://github.com/scemercat1/drivesafe',
-          label: 'GitHub',
+          href: 'https://aka.projectlemon.net/acces/chromatic/mainsite/link1',
+          label: 'Chromatic',
           position: 'right',
         },
       ],
