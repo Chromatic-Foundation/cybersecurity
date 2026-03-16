@@ -1,15 +1,15 @@
 // @ts-check
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'DriveSafe',
-  tagline: 'Drive smarter. Drive safer.',
+  title: 'CyberSecurity',
+  tagline: 'Protect your digital life, one click at a time.',
   favicon: 'img/favicon.ico',
 
   url: 'https://example.com',
   baseUrl: '/',
 
-  organizationName: 'drivesafe',
-  projectName: 'drivesafe-docs',
+  organizationName: 'chromaticnetwork',
+  projectName: 'cybersecurity-docs',
 
   onBrokenLinks: 'warn',
 
@@ -36,15 +36,15 @@ const config = {
 
   themeConfig: {
     navbar: {
-      title: 'DriveSafe',
+      title: 'CyberSecurity',
       logo: {
-        alt: 'DriveSafe Logo',
+        alt: 'CyberSecurity Logo',
         src: 'img/logo.png',
       },
       items: [
         {
           type: 'doc',
-          docId: 'penalties',
+          docId: 'passwords',
           position: 'left',
           label: 'Documentation',
         },
@@ -62,10 +62,10 @@ const config = {
         {
           title: 'Docs',
           items: [
-            { label: 'Penalties', to: '/docs/penalties' },
-            { label: 'Traffic Laws', to: '/docs/traffic-laws' },
-            { label: 'Safe Driving', to: '/docs/safe-driving' },
-            { label: 'FAQ', to: '/docs/faq' },
+            { label: 'Passwords', to: '/docs/passwords' },
+            { label: 'Phising', to: '/docs/phising' },
+            { label: 'Network-Security', to: '/docs/network-security' },
+            { label: 'VPN', to: '/docs/vpn' },
           ],
         },
       ],
