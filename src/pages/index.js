@@ -3,14 +3,14 @@ import Layout from '@theme/Layout';
 
 export default function Home() {
   return (
-    <Layout title="DriveSafe">
+    <Layout title="CyberSecurity Docs">
 
       <div style={{padding:'60px',textAlign:'center'}}>
         <h1>DriveSafe</h1>
 
         <p>
-        DriveSafe helps drivers understand traffic laws,
-        penalties and safe driving practices! Made by ProjectLemon, docs build by docusaurus.
+        CyberSecurity Docs helps you find cool things
+  about CyberSecurity! It helps you understand and how to be safe! Made by ProjectLemon, docs build by docusaurus.
         </p>
 
         <a href="/docs/penalties">
