@@ -17,7 +17,7 @@ module.exports = {
         },
         blog: false,
         theme: {
-          customCss: [undefined],
+          customCss: require.resolve('./src/css/custom.css'),
         },
       },
     ],
