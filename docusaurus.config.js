@@ -1,16 +1,19 @@
+// @ts-check
+
+/** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'DriveSafe',
   tagline: 'Drive smarter. Drive safer.',
   favicon: 'img/favicon.ico',
 
-  url: 'https://example.com',
+  url: 'https://example.com', // lasă example.com pentru Railway
   baseUrl: '/',
 
   organizationName: 'drivesafe',
-  projectName: 'drivesafe',
+  projectName: 'drivesafe-docs',
 
   onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn', // ✅ valid pentru v3
+  onBrokenMarkdownLinks: 'warn',
 
   i18n: {
     defaultLocale: 'en',
@@ -23,12 +26,12 @@ const config = {
       {
         docs: {
           sidebarPath: './sidebars.js',
-          routeBasePath: '/docs',
+          routeBasePath: '/', // homepage-ul va fi în src/pages/index.js
         },
         blog: false,
-        pages: true,
+        pages: true, // activează paginile din src/pages
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve('./src/css/custom.css'), // păstrăm exact cum era
         },
       },
     ],
@@ -44,13 +47,18 @@ const config = {
       items: [
         {
           type: 'doc',
-          docId: 'penalties',
+          docId: 'penalties', // primul doc din sidebar
           position: 'left',
-          label: 'Docs',
+          label: 'Documentation',
         },
         {
-          href: 'https://github.com/scemercat1/drivesafe',
+          href: 'https://github.com/YOUR_GITHUB/drivesafe',
           label: 'GitHub',
+          position: 'right',
+        },
+        {
+          href: 'https://discord.gg/YOUR_DISCORD',
+          label: 'Discord',
           position: 'right',
         },
       ],
@@ -62,19 +70,20 @@ const config = {
         {
           title: 'Docs',
           items: [
-            { label: 'Penalties', to: '/docs/penalties' },
-            { label: 'Traffic Laws', to: '/docs/traffic-laws' },
-            { label: 'Safe Driving', to: '/docs/safe-driving' },
-            { label: 'FAQ', to: '/docs/faq' },
+            { label: 'Penalties', to: '/penalties' },
+            { label: 'Traffic Laws', to: '/traffic-laws' },
+            { label: 'Safe Driving', to: '/safe-driving' },
+            { label: 'FAQ', to: '/faq' },
+          ],
+        },
+        {
+          title: 'Community',
+          items: [
+            { label: 'Discord', href: 'https://discord.gg/YOUR_DISCORD' },
           ],
         },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} DriveSafe`,
-    },
-
-    prism: {
-      theme: require('prism-react-renderer/themes/github'),
-      darkTheme: require('prism-react-renderer/themes/dracula'),
     },
   },
 };
