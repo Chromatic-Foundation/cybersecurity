@@ -13,7 +13,7 @@ export default function Home() {
   about CyberSecurity! It helps you understand and how to be safe! Made by ProjectLemon, docs build by docusaurus.
         </p>
 
-        <a href="/docs/penalties">
+        <a href="/docs/passwords">
           <button style={{fontSize:'20px'}}>
           View CyberSecurity Documentary
           </button>
