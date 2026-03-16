@@ -6,7 +6,7 @@ export default function Home() {
     <Layout title="CyberSecurity Docs">
 
       <div style={{padding:'60px',textAlign:'center'}}>
-        <h1>DriveSafe</h1>
+        <h1>CyberSecurity Docs</h1>
 
         <p>
         CyberSecurity Docs helps you find cool things
@@ -15,7 +15,7 @@ export default function Home() {
 
         <a href="/docs/penalties">
           <button style={{fontSize:'20px'}}>
-          View Driving Guides
+          View CyberSecurity Documentary
           </button>
         </a>
 
