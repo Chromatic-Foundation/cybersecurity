@@ -17,7 +17,7 @@ module.exports = {
         },
         blog: false,
         theme: {
-          customCss: [],
+          customCss: [undefined],
         },
       },
     ],
