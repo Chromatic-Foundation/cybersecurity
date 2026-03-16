@@ -1,19 +1,15 @@
 // @ts-check
-
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'DriveSafe',
   tagline: 'Drive smarter. Drive safer.',
   favicon: 'img/favicon.ico',
 
-  url: 'https://example.com', // lasă example.com pentru Railway
+  url: 'https://example.com',
   baseUrl: '/',
 
   organizationName: 'drivesafe',
   projectName: 'drivesafe-docs',
-
-  onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
 
   i18n: {
     defaultLocale: 'en',
@@ -26,12 +22,12 @@ const config = {
       {
         docs: {
           sidebarPath: './sidebars.js',
-          routeBasePath: '/', // homepage-ul va fi în src/pages/index.js
+          routeBasePath: '/', 
         },
         blog: false,
-        pages: true, // activează paginile din src/pages
+        pages: true,
         theme: {
-          customCss: require.resolve('./src/css/custom.css'), // păstrăm exact cum era
+          customCss: require.resolve('./src/css/custom.css'),
         },
       },
     ],
@@ -47,18 +43,13 @@ const config = {
       items: [
         {
           type: 'doc',
-          docId: 'penalties', // primul doc din sidebar
+          docId: 'penalties',
           position: 'left',
           label: 'Documentation',
         },
         {
-          href: 'https://github.com/YOUR_GITHUB/drivesafe',
+          href: 'https://github.com/scemercat1/drivesafe',
           label: 'GitHub',
-          position: 'right',
-        },
-        {
-          href: 'https://discord.gg/YOUR_DISCORD',
-          label: 'Discord',
           position: 'right',
         },
       ],
@@ -74,12 +65,6 @@ const config = {
             { label: 'Traffic Laws', to: '/traffic-laws' },
             { label: 'Safe Driving', to: '/safe-driving' },
             { label: 'FAQ', to: '/faq' },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            { label: 'Discord', href: 'https://discord.gg/YOUR_DISCORD' },
           ],
         },
       ],
