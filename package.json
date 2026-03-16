@@ -1,0 +1,14 @@
+{
+  "name": "drivesafe",
+  "version": "1.0.0",
+  "private": false,
+  "scripts": {
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "serve": "docusaurus serve"
+  },
+  "dependencies": {
+    "@docusaurus/core": "^3.0.0",
+    "@docusaurus/preset-classic": "^3.0.0"
+  }
+}
