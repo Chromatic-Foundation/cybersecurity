@@ -1,14 +1,13 @@
 {
-  "name": "drivesafe",
-  "version": "1.0.0",
-  "private": false,
+  "name": "drivesafe-docs",
+  "private": true,
   "scripts": {
-    "start": "docusaurus start",
     "build": "docusaurus build",
-    "serve": "docusaurus serve"
+    "start": "serve -s build -l $PORT"
   },
   "dependencies": {
-    "@docusaurus/core": "^3.0.0",
-    "@docusaurus/preset-classic": "^3.0.0"
+    "@docusaurus/core": "^3.1.0",
+    "@docusaurus/preset-classic": "^3.1.0",
+    "serve": "^14.2.0"
   }
 }
