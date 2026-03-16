@@ -1,22 +1,37 @@
-module.exports = {
+// @ts-check
+import { themes as prismThemes } from 'prism-react-renderer';
+
+/** @type {import('@docusaurus/types').Config} */
+const config = {
   title: 'DriveSafe',
   tagline: 'Drive smarter. Drive safer.',
-  url: 'https://example.com',
-  baseUrl: '/',
   favicon: 'img/favicon.ico',
 
+  url: 'https://example.com', // Placeholder valid pentru build
+  baseUrl: '/',
+
   organizationName: 'drivesafe',
-  projectName: 'drivesafe',
+  projectName: 'drivesafe-docs',
+
+  onBrokenLinks: 'warn',
+  onBrokenMarkdownLinks: 'warn',
+
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en'],
+  },
 
   presets: [
     [
-      '@docusaurus/preset-classic',
-      {
+      'classic',
+      ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          routeBasePath: '/', // `/` pentru docs
         },
         blog: false,
-      },
+        pages: false
+      }),
     ],
   ],
 
@@ -25,11 +40,27 @@ module.exports = {
       title: 'DriveSafe',
       items: [
         {
-          to: '/docs/penalties',
+          type: 'doc',
+          docId: 'penalties',
+          position: 'left',
           label: 'Docs',
-          position: 'left'
-        }
-      ]
-    }
-  }
-}
+        },
+        {
+          href: 'https://github.com/scemercat1/drivesafe',
+          label: 'GitHub',
+          position: 'right',
+        },
+      ],
+    },
+    footer: {
+      style: 'dark',
+      copyright: `© ${new Date().getFullYear()} DriveSafe`,
+    },
+    prism: {
+      theme: prismThemes.github,
+      darkTheme: prismThemes.dracula,
+    },
+  },
+};
+
+export default config;
