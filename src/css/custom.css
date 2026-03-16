@@ -1,0 +1,48 @@
+/* custom.css pentru DriveSafe */
+body {
+    background-color: #f9fafb;
+    font-family: 'Inter', sans-serif;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Poppins', sans-serif;
+    color: #0f172a;
+}
+
+a {
+    color: #3b82f6;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header, footer {
+    background-color: #e0f2fe;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 0.75rem;
+    padding: 1rem 1.5rem;
+    margin: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
